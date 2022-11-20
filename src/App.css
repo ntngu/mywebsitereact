@@ -1,7 +1,3 @@
-* {
-  margin: 0;
-}
-
 .visible {
   visibility: visible;
 }
@@ -11,3 +7,7 @@
   visibility: hidden;
 }
 
+#App {
+ display: grid; 
+ width: 100%;
+}

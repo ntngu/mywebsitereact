@@ -28,11 +28,15 @@ const Header = () => {
   );
 };
 
+const Footer = () => {
+  return <div id="Footer">© Copyright 2022 Nhan Nguyen</div>;
+};
+
 const App = () => {
   const [activeTab, setActiveTab] = React.useState("Home");
 
   return (
-    <div className="App">
+    <div id="App">
       <Header />
       <menu>
         <button type="button" onClick={() => setActiveTab("Home")}>
@@ -55,7 +59,7 @@ const App = () => {
         </button>
         <button
           type="button"
-          onClick={() => window.open("https://linkedin.com/in/ntngu")}
+          onClick={() => window.open("https://linkedin.com/in/ntngu", "")}
         >
           LinkedIn
         </button>
@@ -64,6 +68,7 @@ const App = () => {
         </button>
       </menu>
       <div className="content">{renderTab(activeTab)}</div>
+      <Footer />
     </div>
   );
 };
