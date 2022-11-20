@@ -1,21 +1,24 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import Home from './Home'; 
-import Blog from './Blog';
-import './App.css';
+import * as React from "react";
+import Home from "./pages/Home";
+import Blog from "./pages/Blog";
+import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
+import "./App.css";
 
-const Menu = () => {
-  return (
-    <menu>
-      <button>Home</button>
-      <button>Blog</button>
-      <button>Projects</button>
-      <button>GitHub</button>
-      <button>LinkedIn</button>
-      <button>Contact</button>
-    </menu>
-  );
-}
+const renderTab = (activeTab: String) => {
+  switch (activeTab) {
+    case "Home":
+      return <Home />;
+    case "Blog":
+      return <Blog />;
+    case "Projects":
+      return <Projects />;
+    case "Resume":
+      return <Resume />;
+    default:
+      break;
+  }
+};
 
 const Header = () => {
   return (
@@ -23,18 +26,46 @@ const Header = () => {
       <header>Nhan Nguyen</header>
     </div>
   );
-}
+};
 
 const App = () => {
+  const [activeTab, setActiveTab] = React.useState("Home");
+
   return (
-    <div className='App'>
-      <Header/>
-      <Menu/>
-      <div className='content'>
-        <Home/>
-      </div>
+    <div className="App">
+      <Header />
+      <menu>
+        <button type="button" onClick={() => setActiveTab("Home")}>
+          Home
+        </button>
+        <button type="button" onClick={() => setActiveTab("Blog")}>
+          Blog
+        </button>
+        <button type="button" onClick={() => setActiveTab("Resume")}>
+          Resume
+        </button>
+        <button type="button" onClick={() => setActiveTab("Projects")}>
+          Projects
+        </button>
+        <button
+          type="button"
+          onClick={() => window.open("https://github.com/ntngu", "")}
+        >
+          GitHub
+        </button>
+        <button
+          type="button"
+          onClick={() => window.open("https://linkedin.com/in/ntngu")}
+        >
+          LinkedIn
+        </button>
+        <button type="button" onClick={() => setActiveTab("Contact")}>
+          Contact
+        </button>
+      </menu>
+      <div className="content">{renderTab(activeTab)}</div>
     </div>
   );
-}
+};
 
 export default App;
