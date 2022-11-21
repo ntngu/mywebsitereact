@@ -5,12 +5,14 @@ const Resume = () => {
     <div id="Resume">
       <h1>Nhan Nguyen</h1>
       <h2>Education</h2>
-      <h3>University of California, Davis - 2022-2024</h3>
+      <h3>UC Davis - 2022-2024</h3>
       <p>Bachelor's of Science, Computer Science</p>
       <h3>Ohlone College - 2020-2022</h3>
       <p>Transfer Program</p>
       <h2>Work Experience</h2>
-      <h3>Frugal Innovation Hub - 06/2022 - 08/2022</h3>
+      <h3>Software Engineer Intern</h3>
+      <p>Frugal Innovation Hub</p>
+      <p>06/2022 - 08/2022</p>
       <ul>
         <li>
           Developed a prototype application in Dart and Flutter to assist
@@ -30,6 +32,8 @@ const Resume = () => {
         </li>
       </ul>
       <h3>Manufacturing Engineering Intern</h3>
+      <p>Penumbra Inc.</p>
+      <p>06/2019 - 08/2019</p>
       <ul>
         <li>
           Developed a tool organization system to increase technician
