@@ -48,3 +48,8 @@
   font-size: 100px;
   font-family: "Zen Old Mincho";
 }
+
+#Contact {
+  max-width: 100vw;
+  word-wrap: break-word;
+}

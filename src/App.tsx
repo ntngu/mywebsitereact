@@ -4,7 +4,7 @@ import Blog from "./pages/Blog";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import "./App.css";
-import Contact from "./pages/Content";
+import Contact from "./pages/Contact";
 
 const renderTab = (activeTab: String) => {
   switch (activeTab) {
