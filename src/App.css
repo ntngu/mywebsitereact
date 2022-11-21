@@ -5,6 +5,7 @@
   margin-right: 10px;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: auto;
+  font-size: 24px;
 }
 
 .menu-item {

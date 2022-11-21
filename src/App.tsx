@@ -4,6 +4,7 @@ import Blog from "./pages/Blog";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import "./App.css";
+import Contact from "./pages/Content";
 
 const renderTab = (activeTab: String) => {
   switch (activeTab) {
@@ -15,15 +16,15 @@ const renderTab = (activeTab: String) => {
       return <Projects />;
     case "Resume":
       return <Resume />;
+    case "Contact":
+      return <Contact />;
     default:
       break;
   }
 };
 
 const Header = () => {
-  return (
-    <header className="Header">ntngu</header>
-  );
+  return <header className="Header">ntngu</header>;
 };
 
 const Footer = () => {
