@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <div id="Home">
-      <h1>Welcome to my website!</h1>
+      <h1>Welcome to my website.</h1>
       <p>{time}</p>
     </div>
   );

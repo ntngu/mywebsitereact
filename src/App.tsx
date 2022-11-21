@@ -22,9 +22,7 @@ const renderTab = (activeTab: String) => {
 
 const Header = () => {
   return (
-    <div>
-      <header>Nhan Nguyen</header>
-    </div>
+    <header className="Header">ntngu</header>
   );
 };
 
@@ -37,36 +35,38 @@ const App = () => {
 
   return (
     <div id="App">
-      <Header />
-      <menu>
-        <button type="button" onClick={() => setActiveTab("Home")}>
-          Home
-        </button>
-        <button type="button" onClick={() => setActiveTab("Blog")}>
-          Blog
-        </button>
-        <button type="button" onClick={() => setActiveTab("Resume")}>
-          Resume
-        </button>
-        <button type="button" onClick={() => setActiveTab("Projects")}>
-          Projects
-        </button>
-        <button
-          type="button"
-          onClick={() => window.open("https://github.com/ntngu", "")}
-        >
-          GitHub
-        </button>
-        <button
-          type="button"
-          onClick={() => window.open("https://linkedin.com/in/ntngu", "")}
-        >
-          LinkedIn
-        </button>
-        <button type="button" onClick={() => setActiveTab("Contact")}>
-          Contact
-        </button>
-      </menu>
+      <nav id="Menu">
+        <Header />
+        <ul id="menu-list">
+          <li className="menu-item" onClick={() => setActiveTab("Home")}>
+            Home
+          </li>
+          <li className="menu-item" onClick={() => setActiveTab("Blog")}>
+            Blog
+          </li>
+          <li className="menu-item" onClick={() => setActiveTab("Resume")}>
+            Resume
+          </li>
+          <li className="menu-item" onClick={() => setActiveTab("Projects")}>
+            Projects
+          </li>
+          <li
+            className="menu-item"
+            onClick={() => window.open("https://github.com/ntngu", "")}
+          >
+            GitHub
+          </li>
+          <li
+            className="menu-item"
+            onClick={() => window.open("https://linkedin.com/in/ntngu", "")}
+          >
+            LinkedIn
+          </li>
+          <li className="menu-item" onClick={() => setActiveTab("Contact")}>
+            Contact
+          </li>
+        </ul>
+      </nav>
       <div className="content">{renderTab(activeTab)}</div>
       <Footer />
     </div>
