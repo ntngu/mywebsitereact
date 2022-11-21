@@ -3,6 +3,11 @@
   src: local("Inter"), url("./fonts/Inter-Regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Zen Old Mincho";
+  src: local("Zen Old Mincho"), url("./fonts/ZenOldMincho-Regular.ttf") format("truetype");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", "Roboto",

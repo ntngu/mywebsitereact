@@ -31,6 +31,7 @@
 #Header {
   font-size: 30px;
   max-width: 100vw;
+  white-space: nowrap;
 }
 
 #Footer {
@@ -41,4 +42,9 @@
 #content {
   position: relative;
   min-height: 100vh;
+}
+
+#logo {
+  font-size: 100px;
+  font-family: "Zen Old Mincho";
 }

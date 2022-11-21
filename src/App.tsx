@@ -24,7 +24,11 @@ const renderTab = (activeTab: String) => {
 };
 
 const Header = () => {
-  return <header className="Header">仁 | ntngu</header>;
+  return (
+    <header id="Header">
+      <span id="logo">仁</span> | ntngu
+    </header>
+  );
 };
 
 const Footer = () => {
