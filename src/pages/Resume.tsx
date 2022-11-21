@@ -5,9 +5,11 @@ const Resume = () => {
     <div id="Resume">
       <h1>Nhan Nguyen</h1>
       <h2>Education</h2>
-      <h3>UC Davis - 2022-2024</h3>
+      <h3>UC Davis</h3>
+      <p>2022 - 2024</p>
       <p>Bachelor's of Science, Computer Science</p>
-      <h3>Ohlone College - 2020-2022</h3>
+      <h3>Ohlone College</h3>
+      <p>2020 - 2022</p>
       <p>Transfer Program</p>
       <h2>Work Experience</h2>
       <h3>Software Engineer Intern</h3>
