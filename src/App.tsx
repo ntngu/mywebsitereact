@@ -24,7 +24,7 @@ const renderTab = (activeTab: String) => {
 };
 
 const Header = () => {
-  return <header className="Header">ntngu</header>;
+  return <header className="Header">仁 | ntngu</header>;
 };
 
 const Footer = () => {
@@ -67,6 +67,7 @@ const App = () => {
             Contact
           </li>
         </ul>
+        {}
       </nav>
       <div className="content">{renderTab(activeTab)}</div>
       <Footer />
