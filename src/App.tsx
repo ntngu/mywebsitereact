@@ -46,27 +46,36 @@ const App = () => {
           <li className="menu-item" onClick={() => setActiveTab("Home")}>
             Home
           </li>
-          <li className="menu-item" onClick={() => setActiveTab("Blog")}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://blog.ntngu.com"
+            className="menu-item"
+          >
             Blog
-          </li>
+          </a>
           <li className="menu-item" onClick={() => setActiveTab("Resume")}>
             Resume
           </li>
           <li className="menu-item" onClick={() => setActiveTab("Projects")}>
             Projects
           </li>
-          <li
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             className="menu-item"
-            onClick={() => window.open("https://github.com/ntngu", "")}
+            href="https://github.com/ntngu"
           >
             GitHub
-          </li>
-          <li
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             className="menu-item"
-            onClick={() => window.open("https://linkedin.com/in/ntngu", "")}
+            href="https://linkedin.com/in/ntngu"
           >
             LinkedIn
-          </li>
+          </a>
           <li className="menu-item" onClick={() => setActiveTab("Contact")}>
             Contact
           </li>

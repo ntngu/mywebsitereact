@@ -8,6 +8,10 @@
   font-size: 24px;
 }
 
+a {
+  all: unset;
+}
+
 .menu-item {
   display: inline;
   cursor: pointer;
